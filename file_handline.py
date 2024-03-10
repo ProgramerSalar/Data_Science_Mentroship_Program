@@ -12,8 +12,16 @@
 
 
 # write a multiple lines in one file 
-f = open('sample.txt','w')
-f.write('hello hero')
-f.write('\nhow are you')
-f.close()
+# f = open('sample.txt','w')
+# f.write('hello hero')
+# f.write('\nhow are you')
+# f.close()
 
+
+
+# case -2 
+# if file is already present and then write 
+
+f = open('sample.txt','w')
+f.write('hello sanman khan')
+f.close()
