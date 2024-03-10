@@ -84,4 +84,13 @@
 
 # with open('sample.txt', 'w') as f:
 #     f.write('saru khan')
-# f.close()
+
+
+# write the line with using the range 
+big_list = ['hello world' for i in range(1000)]
+with open('sample.txt', 'w') as f:
+    a = f.writelines(big_list)
+    
+
+
+
