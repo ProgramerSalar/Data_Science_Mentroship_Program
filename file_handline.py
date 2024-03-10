@@ -80,3 +80,8 @@
 #     print(s, end='')
 # f.close()
 
+
+
+# with open('sample.txt', 'w') as f:
+#     f.write('saru khan')
+# f.close()
