@@ -43,6 +43,12 @@
 
 
 # how to read the content 
+# f = open('sample.txt','r')  # append mode 
+# r = f.read()  
+# print(r)
+
+
+
 f = open('sample.txt','r')  # append mode 
-r = f.read()
+r = f.read(10)  # 10 is how much character read 
 print(r)
