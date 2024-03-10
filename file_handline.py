@@ -49,6 +49,15 @@
 
 
 
+# f = open('sample.txt','r')  # append mode 
+# r = f.read(10)  # 10 is how much character read 
+# print(r)
+
+
+# how to read line by line 
 f = open('sample.txt','r')  # append mode 
-r = f.read(10)  # 10 is how much character read 
-print(r)
+s = f.readline()  # read the first line 
+s2 = f.readline()  # read the second line 
+print(s)
+print(s2)
+f.close()
