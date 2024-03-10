@@ -22,6 +22,13 @@
 # case -2 
 # if file is already present and then write 
 
-f = open('sample.txt','w')
-f.write('hello sanman khan')
+# f = open('sample.txt','w')
+# f.write('hello sanman khan')
+# f.close()
+
+
+
+# problem with write mode if you add the text,then before text are remove 
+f = open('sample.txt','a')  # append mode 
+f.write("\ni am manish")
 f.close()
