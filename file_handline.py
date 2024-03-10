@@ -35,7 +35,14 @@
 
 
 # if you add the text to much 
-List = ['orem Ipsum is simply dum']
-f = open('sample.txt','w')  # append mode 
-f.writelines(List)
-f.close()
+# List = ['orem Ipsum is simply dum']
+# f = open('sample.txt','w')  # append mode 
+# f.writelines(List)
+# f.close()
+
+
+
+# how to read the content 
+f = open('sample.txt','r')  # append mode 
+r = f.read()
+print(r)
