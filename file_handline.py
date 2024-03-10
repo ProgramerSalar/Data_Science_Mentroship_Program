@@ -64,11 +64,19 @@
 
 
 # you see output are give the gap 
-f = open('sample.txt','r')  # append mode 
-s = f.readline()  # read the first line 
-s2 = f.readline()  # read the second line 
-print(s, end='')   # it adds a newline character (\n) at the end by default. However, if you specify end='', it will suppress the newline character, ensuring that the next thing printed appears on the same line.
-print(s2)
-f.close()
+# f = open('sample.txt','r')  # append mode 
+# s = f.readline()  # read the first line 
+# s2 = f.readline()  # read the second line 
+# print(s, end='')   # it adds a newline character (\n) at the end by default. However, if you specify end='', it will suppress the newline character, ensuring that the next thing printed appears on the same line.
+# print(s2)
+# f.close()
 
+
+
+# reading the entire lines 
+# f = open('sample.txt','r')  # append mode 
+# while f.readline() != '':
+#     s=f.readline()
+#     print(s, end='')
+# f.close()
 
