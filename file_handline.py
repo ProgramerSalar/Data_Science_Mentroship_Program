@@ -87,10 +87,14 @@
 
 
 # write the line with using the range 
-big_list = ['hello world' for i in range(1000)]
-with open('sample.txt', 'w') as f:
-    a = f.writelines(big_list)
+# big_list = ['hello world' for i in range(1000)]
+# with open('sample.txt', 'w') as f:
+#     a = f.writelines(big_list)
     
 
-
+# with open('sample.txt', 'r') as f:
+#     chunk_size = 10
+#     while len(f.read(chunk_size)) > 0:
+#         print(f.read(chunk_size),end='')
+#         f.read(chunk_size)
 
