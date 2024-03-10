@@ -29,6 +29,13 @@
 
 
 # problem with write mode if you add the text,then before text are remove 
-f = open('sample.txt','a')  # append mode 
-f.write("\ni am manish")
+# f = open('sample.txt','a')  # append mode 
+# f.write("\ni am manish")
+# f.close()
+
+
+# if you add the text to much 
+List = ['orem Ipsum is simply dum']
+f = open('sample.txt','w')  # append mode 
+f.writelines(List)
 f.close()
