@@ -176,24 +176,33 @@ import json
 #     json.dump(L, f)
     
 
-d = {
-    'name':'manish',
-    'age':12,
+# d = {
+#     'name':'manish',
+#     'age':12,
 
-}
+# }
 
 
-with open('sample.txt', 'w') as f:
-    # json.dump(d, f)
-    json.dump(d, f, indent=4)   # indent means indent the line 
+# with open('sample.txt', 'w') as f:
+#     # json.dump(d, f)
+#     json.dump(d, f, indent=4)   # indent means indent the line 
 
+# # with open('sample.txt', 'r') as f:
+# #     print(f.read())
+# #     print(type(f))
+
+#     # deseriliaztion of data 
 # with open('sample.txt', 'r') as f:
-#     print(f.read())
+#     print(json.load(f))
 #     print(type(f))
 
-    # deseriliaztion of data 
+
+
+# seriliazation with tuple 
+t = (1, 2, 3)
+with open('sample.txt', 'w') as f:
+    json.dump(t, f)   # tuple are store in list 
+
+
 with open('sample.txt', 'r') as f:
     print(json.load(f))
-    print(type(f))
-
-
