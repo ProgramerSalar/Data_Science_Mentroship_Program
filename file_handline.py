@@ -199,10 +199,30 @@ import json
 
 
 # seriliazation with tuple 
-t = (1, 2, 3)
-with open('sample.txt', 'w') as f:
-    json.dump(t, f)   # tuple are store in list 
+# t = (1, 2, 3)
+# with open('sample.txt', 'w') as f:
+#     json.dump(t, f)   # tuple are store in list 
 
 
-with open('sample.txt', 'r') as f:
-    print(json.load(f))
+# with open('sample.txt', 'r') as f:
+#     print(json.load(f))
+
+class Person:
+    def __init__(self, fname, lname, age, gender):
+        self.fname = fname
+        self.lname = lname 
+        self.age = age 
+        self.gender = gender
+
+person = Person("manish", "Kumar", 12, 'male')
+# print(person)
+
+# As a string
+
+
+def show_object(person):
+  if isinstance(person,Person):
+    return "{} {} age -> {} gender -> {}".format(person.fname,person.lname,person.age,person.gender)
+
+with open('demo.json','w') as f:
+  json.dump(person,f,default=show_object)
