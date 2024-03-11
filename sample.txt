@@ -1,1 +1,4 @@
-{"name": "manish", "age": 12}
+{
+    "name": "manish",
+    "age": 12
+}

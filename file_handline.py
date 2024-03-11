@@ -184,4 +184,16 @@ d = {
 
 
 with open('sample.txt', 'w') as f:
-    json.dump(d, f)
+    # json.dump(d, f)
+    json.dump(d, f, indent=4)   # indent means indent the line 
+
+# with open('sample.txt', 'r') as f:
+#     print(f.read())
+#     print(type(f))
+
+    # deseriliaztion of data 
+with open('sample.txt', 'r') as f:
+    print(json.load(f))
+    print(type(f))
+
+
