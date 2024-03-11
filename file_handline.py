@@ -93,8 +93,12 @@
     
 
 # with open('sample.txt', 'r') as f:
-#     chunk_size = 10
-#     while len(f.read(chunk_size)) > 0:
-#         print(f.read(chunk_size),end='')
-#         f.read(chunk_size)
+#     chunk_size = 10   # every 10 character 
+#     while len(f.read(chunk_size)) > 0:           # chunk size is greater than 0
+#         print(f.read(chunk_size), end='')   # print the chunk and skip the line 
+        
 
+with open('sample.txt', 'r') as f:
+    s = f.read(10)
+    s = f.tell()     # how many character read if you using the tell
+    print(s)
