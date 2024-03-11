@@ -171,7 +171,17 @@
 
 # seriliaztion using list 
 import json 
-L = [1, 2, 3]
-with open('sample.txt', 'w') as f:
-    json.dump(L, f)
+# L = [1, 2, 3]
+# with open('sample.txt', 'w') as f:
+#     json.dump(L, f)
     
+
+d = {
+    'name':'manish',
+    'age':12,
+
+}
+
+
+with open('sample.txt', 'w') as f:
+    json.dump(d, f)
