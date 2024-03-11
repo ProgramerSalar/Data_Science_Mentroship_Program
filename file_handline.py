@@ -97,11 +97,36 @@
 #     while len(f.read(chunk_size)) > 0:           # chunk size is greater than 0
 #         print(f.read(chunk_size), end='')   # print the chunk and skip the line 
         
+# tell means, where are you
+# seek means, where you go
+# with open('sample.txt', 'r') as f:
+#     s = f.read(10)
+#     s = f.tell()     # how many character read if you using the tell
+#     print(s)
+#     # f.seek(0)  # again start the zero position of character, 
+#     f.seek(5)    # starting the 
+#     print(f.read(10))
+#     print(f.tell()) # output is 15, means 
 
-with open('sample.txt', 'r') as f:
-    s = f.read(10)
-    s = f.tell()     # how many character read if you using the tell
-    print(s)
-    f.seek(0)  # again start the zero position of character 
-    print(f.read(10))
-    print(f.tell())
+
+# with open('sample.txt', 'r') as f:
+#     print(f.seek(5))     # where are you go 
+#     print(f.tell())       # where are you?
+
+
+# with open('sample.txt', 'w') as f:
+#     f.write('hello')
+#     f.seek(0)
+#     f.write('x')
+    
+# with open('sample.txt','r') as a:
+#     print(a.read())
+
+
+# how to read and write images 
+with open('one.jpg', 'rb') as f:
+    with open('one_copy.jpg', 'wb') as wb:
+        wb.write(f.read())   
+        
+
+
