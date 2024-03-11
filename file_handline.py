@@ -102,3 +102,6 @@ with open('sample.txt', 'r') as f:
     s = f.read(10)
     s = f.tell()     # how many character read if you using the tell
     print(s)
+    f.seek(0)  # again start the zero position of character 
+    print(f.read(10))
+    print(f.tell())
