@@ -207,29 +207,60 @@ import json
 # with open('sample.txt', 'r') as f:
 #     print(json.load(f))
 
+# class Person:
+#     def __init__(self, fname, lname, age, gender):
+#         self.fname = fname
+#         self.lname = lname 
+#         self.age = age 
+#         self.gender = gender
+
+# person = Person("manish", "Kumar", 12, 'male')
+# # print(person)
+
+# # As a string
+
+
+# def show_object(person):
+#   if isinstance(person,Person):
+#     # return "{} {} age -> {} gender -> {}".format(person.fname,person.lname,person.age,person.gender)
+#     # json format 
+#     return {
+#        'name':person.fname,
+#        'lastName':person.lname,
+#        'age':person.age,
+#        'gender':person.gender
+#     }
+
+# with open('demo.json','w') as f:
+#   json.dump(person,f,default=show_object)
+
+
+
+# PICKLE 
+# Pickling is the process whereby a Python object hierarchy is converted into a byte stream, and unpickling is the inverse operation, whereby a byte stream (from a binary file or bytes-like object) is converted back into an object hierarchy.
+
+
 class Person:
-    def __init__(self, fname, lname, age, gender):
-        self.fname = fname
-        self.lname = lname 
-        self.age = age 
-        self.gender = gender
 
-person = Person("manish", "Kumar", 12, 'male')
-# print(person)
+  def __init__(self,name,age):
+    self.name = name
+    self.age = age
 
-# As a string
+  def display_info(self):
+    print('Hi my name is',self.name,'and I am ',self.age,'years old')
 
 
-def show_object(person):
-  if isinstance(person,Person):
-    # return "{} {} age -> {} gender -> {}".format(person.fname,person.lname,person.age,person.gender)
-    # json format 
-    return {
-       'name':person.fname,
-       'lastName':person.lname,
-       'age':person.age,
-       'gender':person.gender
-    }
+p = Person('nitish',33)
 
-with open('demo.json','w') as f:
-  json.dump(person,f,default=show_object)
+# pickle dump
+import pickle
+with open('person.pkl','wb') as f:
+  pickle.dump(p,f)
+
+
+# pickle load
+import pickle
+with open('person.pkl','rb') as f:
+  p = pickle.load(f)
+
+p.display_info()
