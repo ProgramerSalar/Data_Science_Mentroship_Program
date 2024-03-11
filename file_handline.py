@@ -222,7 +222,14 @@ person = Person("manish", "Kumar", 12, 'male')
 
 def show_object(person):
   if isinstance(person,Person):
-    return "{} {} age -> {} gender -> {}".format(person.fname,person.lname,person.age,person.gender)
+    # return "{} {} age -> {} gender -> {}".format(person.fname,person.lname,person.age,person.gender)
+    # json format 
+    return {
+       'name':person.fname,
+       'lastName':person.lname,
+       'age':person.age,
+       'gender':person.gender
+    }
 
 with open('demo.json','w') as f:
   json.dump(person,f,default=show_object)
