@@ -124,9 +124,40 @@
 
 
 # how to read and write images 
-with open('one.jpg', 'rb') as f:
-    with open('one_copy.jpg', 'wb') as wb:
-        wb.write(f.read())   
+# with open('one.jpg', 'rb') as f:
+#     with open('one_copy.jpg', 'wb') as wb:
+#         wb.write(f.read())   
         
 
 
+# Problems with working in text mode
+# can't work with binary files like images
+# not good for other data types like int/float/list/tuples
+        
+
+
+with open('sample.txt', 'w') as f:
+    f.write(5)  # write() argument must be str, not int  
+    f.write('5')
+
+
+with open('sample.txt', 'r') as f:
+    print(f.read())
+    print(f.read() + 5)   # can only concatenate str (not "int") to st
+    print(int(f.read()) + 5)
+
+
+d = {
+    'name':'manish',
+    'age':12,
+
+}
+
+with open('sample.txt', 'w') as f:
+    # f.write(d)    #write() argument must be str, not dict
+    f.write(str(d))
+
+
+with open('sample.txt', 'r') as f:
+    print(f.read())
+    print(type(f))
