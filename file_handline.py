@@ -136,28 +136,42 @@
         
 
 
+# with open('sample.txt', 'w') as f:
+#     f.write(5)  # write() argument must be str, not int  
+#     f.write('5')
+
+
+# with open('sample.txt', 'r') as f:
+#     print(f.read())
+#     print(f.read() + 5)   # can only concatenate str (not "int") to st
+#     print(int(f.read()) + 5)
+
+
+# d = {
+#     'name':'manish',
+#     'age':12,
+
+# }
+
+# with open('sample.txt', 'w') as f:
+#     # f.write(d)    #write() argument must be str, not dict
+#     f.write(str(d))
+
+
+# with open('sample.txt', 'r') as f:
+#     print(f.read())
+#     print(type(f))
+
+
+
+# seriliazation and deserilization
+# seriliazation - convert python data type to JSON
+# deserilization - convert JSON to python data type 
+
+
+# seriliaztion using list 
+import json 
+L = [1, 2, 3]
 with open('sample.txt', 'w') as f:
-    f.write(5)  # write() argument must be str, not int  
-    f.write('5')
-
-
-with open('sample.txt', 'r') as f:
-    print(f.read())
-    print(f.read() + 5)   # can only concatenate str (not "int") to st
-    print(int(f.read()) + 5)
-
-
-d = {
-    'name':'manish',
-    'age':12,
-
-}
-
-with open('sample.txt', 'w') as f:
-    # f.write(d)    #write() argument must be str, not dict
-    f.write(str(d))
-
-
-with open('sample.txt', 'r') as f:
-    print(f.read())
-    print(type(f))
+    json.dump(L, f)
+    
