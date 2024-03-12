@@ -12,17 +12,36 @@
 
 
 
-def my_decoretor(func):
-    def my_function():
+# def my_decoretor(func):
+#     def my_function():
+#         print("*********")
+#         func()
+#         print("******")
+
+#     return my_function()
+
+
+# def hello():
+#     print('hello')
+
+
+# my_decoretor(hello)
+
+
+
+# shortcut method of decorator 
+
+def my_decorator(func):
+    def my_func():
         print("*********")
         func()
-        print("******")
-
-    return my_function()
+    return my_func()
 
 
+@my_decorator
 def hello():
-    print('hello')
+    print("hello")
 
 
-my_decoretor(hello)
+
+# my_decorator(hello)
