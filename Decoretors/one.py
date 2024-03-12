@@ -1,23 +1,18 @@
 
 
+n = int(input("Efnter Number"))
+def my_decorator(func, *args):
+    # func()
+    return func(*args)
 
-def my_decorator(func):
-    def my_func(*args):
-        print('hello world')
-        func(*args)
-    return my_func
+    
 
-
-
-@my_decorator
-def hello(num):
-    print('hi')
-    print(num)
-
-@my_decorator
-def sum(a, b):
-    print(a*b)
+def hello(n):
+    print(n)
 
 
-sum(2, 3)
-hello(2)
+my_decorator(hello, n)
+
+
+
+# hello(2)
