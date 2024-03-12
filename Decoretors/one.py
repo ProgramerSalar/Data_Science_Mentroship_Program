@@ -1,47 +1,23 @@
-# A decorator in python is a function that receives another function as input and adds some functionality(decoration) to and it and returns it.
-# This can happen only because python functions are 1st class citizens.
-
-# def modify(func, num):
-#     return func(num)
-
-# def square(num):
-#     return num ** 2
-
-# a = modify(square, 2)
-# print(a)
 
 
-
-# def my_decoretor(func):
-#     def my_function():
-#         print("*********")
-#         func()
-#         print("******")
-
-#     return my_function()
-
-
-# def hello():
-#     print('hello')
-
-
-# my_decoretor(hello)
-
-
-
-# shortcut method of decorator 
 
 def my_decorator(func):
-    def my_func():
-        print("*********")
-        func()
-    return my_func()
+    def my_func(*args):
+        print('hello world')
+        func(*args)
+    return my_func
+
 
 
 @my_decorator
-def hello():
-    print("hello")
+def hello(num):
+    print('hi')
+    print(num)
+
+@my_decorator
+def sum(a, b):
+    print(a*b)
 
 
-
-# my_decorator(hello)
+sum(2, 3)
+hello(2)
