@@ -42,12 +42,21 @@
 
 
 
-## Generator Expression
+
 ### List comprehension
-L = [i**2 for i in range(1, 10)]   # 1 se 10 ka range me square kar elment ka matlub 2 ka square 4, 3 ka square 9
-print(L)
+# L = [i**2 for i in range(1, 10)]   # 1 se 10 ka range me square kar elment ka matlub 2 ka square 4, 3 ka square 9
+# print(L)
 
 
 # range(1, 10) generates a sequence of numbers from 1 up to (but not including) 10.
 # i**2 calculates the square of each number in the range.
 # The entire expression [i**2 for i in range(1, 10)] creates a list containing these squared values.
+
+
+
+## Generator Expression
+
+L = (i for i in range(1, 10))
+
+for i in L:
+    print(i)
