@@ -44,7 +44,7 @@
 
 ## Generator Expression
 ### List comprehension
-L = [i**2 for i in range(1, 10)]
+L = [i**2 for i in range(1, 10)]   # 1 se 10 ka range me square kar elment ka matlub 2 ka square 4, 3 ka square 9
 print(L)
 
 
