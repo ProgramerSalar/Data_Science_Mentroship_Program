@@ -8,7 +8,7 @@ class Atm:
     def __init__(self):
         # print("hello world")
         self.pin = ''
-        self.blance = 0
+        self.balance = 0
         self.func()
 
 
@@ -24,13 +24,15 @@ class Atm:
         """)
         
         if user_input == '1':
-    
             self.create_pin()
+            
+        
             
             
         
     def create_pin(self):
-        print("create Pin")
+        user_pin = input("ENter Pin")
+        self.pin = user_pin
         
         
 
