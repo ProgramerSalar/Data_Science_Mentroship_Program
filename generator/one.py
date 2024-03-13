@@ -31,13 +31,23 @@
 
 
 # how to make loop using generator function 
-def generator(start, end):
-    for i in range(start, end):
-        yield i 
+# def generator(start, end):
+#     for i in range(start, end):
+#         yield i 
 
 
-for i in generator(1, 10):
-    print(i)
+# for i in generator(1, 10):
+#     print(i)
 
 
-    
+
+
+## Generator Expression
+### List comprehension
+L = [i**2 for i in range(1, 10)]
+print(L)
+
+
+# range(1, 10) generates a sequence of numbers from 1 up to (but not including) 10.
+# i**2 calculates the square of each number in the range.
+# The entire expression [i**2 for i in range(1, 10)] creates a list containing these squared values.
