@@ -6,13 +6,33 @@ class Atm:
     # constructor 
     # custructor are atomatically call when excute the class 
     def __init__(self):
-        print("hello world")
+        # print("hello world")
+        self.pin = ''
+        self.blance = 0
         self.func()
 
 
     # function 
-    def func(self):   # self is essential if you are in the class 
-        print('hello function')
+    def func(self):
+        user_input = input("""
+            Hi how can help you
+            1. Press 1 To create Pin
+            2. Press 2 TO change Pin
+            3. Press 3 To check Balance
+            4. Press 4 To withdraw
+            5. Anything To Exit.
+        """)
+        
+        if user_input == '1':
+    
+            self.create_pin()
+            
+            
+        
+    def create_pin(self):
+        print("create Pin")
+        
+        
 
 
 Atm()
