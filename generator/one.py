@@ -3,17 +3,28 @@
 # data science me bahut gayad used hota hai 
 # generator me return function nahi hoti, yield function hoti hai 
 
+# def generator():
+#     yield "first function"
+#     yield "second function"
+#     yield "Last function"
+
+# a = generator()
+# # print(next(a))
+# # print(next(a))
+# # print(next(a))
+
+# for i in a:
+#     print(i)
+
+
 def generator():
-    yield "first function"
-    yield "second function"
-    yield "Last function"
+    for i in range(1, 10):
+        # print(i)
+        yield i
+
 
 a = generator()
-# print(next(a))
-# print(next(a))
-# print(next(a))
-
-for i in a:
-    print(i)
-
-
+print(next(a))
+print(next(a))
+for j in a:
+    print(j)
