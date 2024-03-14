@@ -38,7 +38,13 @@ class Fraction:
         return "{}/{}".format(new_num, new_den)   # here we are not use self how because we are not create object in class, we created the object in method so not need to self 
     
         
-   
+    # devide magic mathod 
+    def __truediv__(self, other):
+        new_num = self.num*other.den
+        new_den = self.den * other.num
+        return "{}/{}".format(new_num, new_den)   # here we are not use self how because we are not create object in class, we created the object in method so not need to self 
+    
+        
         
     
     
@@ -52,3 +58,4 @@ b = Fraction(1, 2)
 print(a+b)
 print(a-b)
 print(a*b)
+print(a/b)
