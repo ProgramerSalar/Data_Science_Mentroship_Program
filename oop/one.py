@@ -2,15 +2,34 @@
 
 class Fraction:
     
+    
+    # paramatrize constructor - that constructor when you give the input in this constructor give two parameter x and y  
     def __init__(self, x, y):
-        self.a = x 
-        self.b = y 
+        self.num = x     # num means nemonetor 
+        self.den = y     # den means demonetor
+        # print(x, y)
         
         
-    # str method is atomatically call 
+    # magic method     
     def __str__(self):
-        return 'hello'
+        return "{}/{}".format(self.num, self.den)
     
     
+    def __add__(self, other):   # we have two fraction , add method take two parameter first is self, and second is other || then we are added the faction object  
+        # return "hello world"
+        # print("hello world")
+        new_num = self.num*other.den + other.num*self.den
+        new_den = self.den * other.den
+        return "{}/{}".format(new_num, new_den)   # here we are not use self how because we are not create object in class, we created the object in method so not need to self 
+    
+        
+        
+        
+        
+    
+
 a = Fraction(2, 2)
-print(a)
+b = Fraction(1, 2)
+# print(a)    
+# print(b)
+print(a+b)
