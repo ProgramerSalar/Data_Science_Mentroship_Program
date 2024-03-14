@@ -46,6 +46,13 @@ class Fraction:
     
         
         
+    # make a own magaic method 
+    def convert_to_decimal(self):
+        return self.num / self.den
+    
+    
+    
+        
     
     
         
@@ -55,7 +62,9 @@ a = Fraction(2, 2)
 b = Fraction(1, 2)
 # print(a)    
 # print(b)
-print(a+b)
-print(a-b)
-print(a*b)
-print(a/b)
+# print(a+b)
+# print(a-b)
+# print(a*b)
+# print(a/b)
+c = a.convert_to_decimal()
+print(c)
