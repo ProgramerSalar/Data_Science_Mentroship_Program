@@ -23,8 +23,25 @@ class Fraction:
         return "{}/{}".format(new_num, new_den)   # here we are not use self how because we are not create object in class, we created the object in method so not need to self 
     
         
+    def __sub__(self, other):   # we have two fraction , add method take two parameter first is self, and second is other || then we are added the faction object  
+        # return "hello world"
+        # print("hello world")
+        new_num = self.num*other.den - other.num*self.den
+        new_den = self.den * other.den
+        return "{}/{}".format(new_num, new_den)   # here we are not use self how because we are not create object in class, we created the object in method so not need to self 
+    
         
+    # multiply magic mathod 
+    def __mul__(self, other):
+        new_num = self.num*other.num
+        new_den = self.den * other.den
+        return "{}/{}".format(new_num, new_den)   # here we are not use self how because we are not create object in class, we created the object in method so not need to self 
+    
         
+   
+        
+    
+    
         
     
 
@@ -33,3 +50,5 @@ b = Fraction(1, 2)
 # print(a)    
 # print(b)
 print(a+b)
+print(a-b)
+print(a*b)
