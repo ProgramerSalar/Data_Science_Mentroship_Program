@@ -1,70 +1,37 @@
+# Write OOP classes to handle the following scenarios:
+# A user can create and view 2D coordinates
+# A user can find out the distance between 2 coordinates
+# A user can find find the distance of a coordinate from origin
+# A user can check if a point lies on a given line
+# A user can find the distance between a given 2D point and a given line
 
 
-class Fraction:
+class Point:
     
-    
-    # paramatrize constructor - that constructor when you give the input in this constructor give two parameter x and y  
     def __init__(self, x, y):
-        self.num = x     # num means nemonetor 
-        self.den = y     # den means demonetor
-        # print(x, y)
+        self.x_cod = x
+        self.y_cod = y 
         
         
-    # magic method     
     def __str__(self):
-        return "{}/{}".format(self.num, self.den)
+        return "<{},{}>".format(self.x_cod, self.y_cod)
     
     
-    def __add__(self, other):   # we have two fraction , add method take two parameter first is self, and second is other || then we are added the faction object  
-        # return "hello world"
-        # print("hello world")
-        new_num = self.num*other.den + other.num*self.den
-        new_den = self.den * other.den
-        return "{}/{}".format(new_num, new_den)   # here we are not use self how because we are not create object in class, we created the object in method so not need to self 
+    def ecluen_distance(self, other):
+        return ((self.x_cod - other.x_cod)**2 + (self.y_cod - other.y_cod)**2)**0.5 # 0.5 means root of two cordinate 
     
-        
-    def __sub__(self, other):   # we have two fraction , add method take two parameter first is self, and second is other || then we are added the faction object  
-        # return "hello world"
-        # print("hello world")
-        new_num = self.num*other.den - other.num*self.den
-        new_den = self.den * other.den
-        return "{}/{}".format(new_num, new_den)   # here we are not use self how because we are not create object in class, we created the object in method so not need to self 
     
-        
-    # multiply magic mathod 
-    def __mul__(self, other):
-        new_num = self.num*other.num
-        new_den = self.den * other.den
-        return "{}/{}".format(new_num, new_den)   # here we are not use self how because we are not create object in class, we created the object in method so not need to self 
-    
-        
-    # devide magic mathod 
-    def __truediv__(self, other):
-        new_num = self.num*other.den
-        new_den = self.den * other.num
-        return "{}/{}".format(new_num, new_den)   # here we are not use self how because we are not create object in class, we created the object in method so not need to self 
-    
-        
-        
-    # make a own magaic method 
-    def convert_to_decimal(self):
-        return self.num / self.den
+    def distance_from_origin(self):
+        return self.ecluen_distance(Point(0, 0))
     
     
     
-        
     
-    
-        
-    
-
-a = Fraction(2, 2)
-b = Fraction(1, 2)
-# print(a)    
-# print(b)
-# print(a+b)
-# print(a-b)
-# print(a*b)
-# print(a/b)
-c = a.convert_to_decimal()
+a = Point(0, 0)
+a2 = Point(10,10)
+print(a)
+print(a2)
+b = a.ecluen_distance(a2)
+print(b)
+c = a.distance_from_origin()
 print(c)
