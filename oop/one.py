@@ -96,3 +96,12 @@ class Atm:
       
     
 print(Atm.get_counter())
+
+
+
+
+# Points to remember about static
+# Static attributes are created at class level.
+# Static attributes are accessed using ClassName.
+# Static attributes are object independent. We can access them without creating instance (object) of the class in which they are defined.
+# The value stored in static attribute is shared between all instances(objects) of the class in which the static attribute is defined.
