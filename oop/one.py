@@ -21,18 +21,32 @@ class Point:
     
     
     
+class Line:
     
-    
-    
-    
-    
-    
-    
+    def __init__(self, x, y, z):
+        self.a = x 
+        self.b = y 
+        self.c = z 
         
+    def __str__(self):
+        return "{}x + {}y + {}".format(self.a, self.b, self.c)
+    
+    
+    
+    
+    
         
 p = Point(2, 3)
 p2 = Point(3, 2)
 a = p.distance_between_two_point(p2)
 b = p.distance_between_point_and_origin()
-print(b)
+# print(b)
 # print(a)
+
+
+l = Line(3, 4, 5)
+print(l)
+
+
+
+
