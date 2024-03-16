@@ -11,7 +11,16 @@ class Point:
     
     
     def distance_between_two_point(self, other):
-        return (self.x_cod - other.y_cod)
+        return ((self.x_cod - other.y_cod)**2 + (self.y_cod - other.y_cod)**2)**0.5
+    
+    
+    def distance_between_point_and_origin(self):
+        # return self.distance_between_two_point(Point(0,0))
+        return ((self.x_cod**2 + self.y_cod**2))**0.5
+        
+    
+    
+    
     
     
     
@@ -24,4 +33,6 @@ class Point:
 p = Point(2, 3)
 p2 = Point(3, 2)
 a = p.distance_between_two_point(p2)
-print(a)
+b = p.distance_between_point_and_origin()
+print(b)
+# print(a)
