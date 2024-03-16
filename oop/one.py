@@ -32,6 +32,16 @@ class Line:
         return "{}x + {}y + {}".format(self.a, self.b, self.c)
     
     
+    def Point_on_lines(self, point):
+        if (self.a*point.x_cod + self.b*point.y_cod + self.c) == 0:
+            return "Lies on the lines"
+        else:
+            return "not Lies on the lines"
+    
+    
+        
+    
+    
     
     
     
@@ -44,9 +54,11 @@ b = p.distance_between_point_and_origin()
 # print(a)
 
 
-l = Line(3, 4, 5)
-print(l)
+l = Line(0, 0, 0)
+# print(l)
 
+l1 = l.Point_on_lines(Point(3,4))
+print(l1)
 
 
 
