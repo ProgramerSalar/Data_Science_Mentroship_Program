@@ -1,18 +1,28 @@
 
 
 
-
 class Atm:
 
   # constructor(special function)->superpower -> 
   def __init__(self):
     print(id(self))
     self.pin = ''
-    self.__balance = 0   # this is private method 
+    self.__balance = 0
     #self.menu()
 
-  
-    # this is private function 
+
+ # geeter function 
+  def get_balance(self):
+    return self.__balance
+
+
+# set function 
+  def set_balance(self,new_value):
+    if type(new_value) == int:
+      self.__balance = new_value
+    else:
+      print('beta bahot maarenge')
+
   def __menu(self):
     user_input = input("""
     Hi how can I help you?
@@ -76,10 +86,12 @@ class Atm:
       
       
       
+      
+      
+      
 obj = Atm()
-obj.create_pin()
-obj._Atm__balance = "hehehe"
-obj.withdraw()
+obj.set_balance("hehe")
+obj.get_balance()
 
 # give this error 
 #TypeError: '<=' not supported between instances of 'int' and 'str'
@@ -89,3 +101,13 @@ obj.withdraw()
 ### IF YOU KNOW THE VARIABLE NAME, FUNCTION NAME THEN ACCESS THE YOUR VARIABLE AND FUNCTION OUT SIDE OF CLASS 
 ### HOW CAN ACCESS THE VARIABLE AND FUNCTION IF ARE PRIVATE ?
 ### EXAMPLE, YOU CLASS NAME IS ATM AND YOU PRIVATE FUNCTION IS VARIABLEIS BALANCE EX- _Atm_balance  
+
+
+
+### IF YOU GET THE FUNCTION MEANS TUM PRIVATE METHOD KO NAHI PAR EK FUNCTION BANA KE USKO PUBLIC KAR DIYA 
+### ISME TUM FUNCTION ME CONDITION BHI DAL SAKTE HAI,
+### ISKO KARNE SE TUMHARA VARIABLE BHI PRIVATE RAHEGA OR EK FUNCTION ME DAL KE USKO ALLOW BHI KAR DIYA
+### THIS IS CALLED GETTER AND SETTER METHOD 
+
+#### GETER MEANS KON SA PARIVATE VARIABLE KO PUBLIC KARNA HAI
+#### SETTER MEANS JO VARIABLE ALLOW KIYE HO PUBLIC KARNA USKO FUNCION ME DAL DO TAKI CONDITION USE KAR SAKO 
