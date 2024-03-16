@@ -15,14 +15,15 @@ class Atm:
     Atm.__counter = Atm.__counter + 1
     #self.menu()
 
-  # utility functions
-  @staticmethod
-  def get_counter():
-    return Atm.__counter
-
 
   def get_balance(self):
     return self.__balance
+
+
+# utility functions   # static method function is called utility function 
+  @staticmethod
+  def get_counter():
+    return Atm.__counter
 
   def set_balance(self,new_value):
     if type(new_value) == int:
@@ -94,3 +95,4 @@ class Atm:
       
       
     
+print(Atm.get_counter())
