@@ -33,32 +33,31 @@ class Line:
     
     
     def Point_on_lines(self, point):
-        if (self.a*point.x_cod + self.b*point.y_cod + self.c) == 0:
+        if self.a*point.x_cod + self.b*point.y_cod + self.c == 0:
             return "Lies on the lines"
         else:
             return "not Lies on the lines"
     
     
-        
+    
+    def shortest_distance(line, point):
+        nominator = abs(line.a*point.x_cod + line.b*point.y_cod + line.c)
+        dominator = (line.a**2 + line.b**2)**0.5
+        return nominator/dominator
     
     
     
     
     
         
-p = Point(2, 3)
-p2 = Point(3, 2)
-a = p.distance_between_two_point(p2)
-b = p.distance_between_point_and_origin()
-# print(b)
-# print(a)
-
-
-l = Line(0, 0, 0)
-# print(l)
-
-l1 = l.Point_on_lines(Point(3,4))
-print(l1)
-
+    
+    
+    
+    
+    
+        
+l1 = Line(1,1,-2)
+p1 = Point(1,10)
+print(l1.shortest_distance(p1))
 
 
