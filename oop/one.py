@@ -1,4 +1,9 @@
-# super -> constuctor
+
+
+
+
+# can super access parent ka data?
+# using super outside the class
 class Phone:
     def __init__(self, price, brand, camera):
         print ("Inside phone constructor")
@@ -6,19 +11,18 @@ class Phone:
         self.brand = brand
         self.camera = camera
 
+    def buy(self):
+        print ("Buying a phone")
+
 class SmartPhone(Phone):
-    def __init__(self, price, brand, camera, os, ram):
-        print('Inside smartphone constructor')
-        super().__init__(price, brand, camera)
-        self.os = os
-        self.ram = ram
-        print ("Inside smartphone constructor")
+    def buy(self):
+        print ("Buying a smartphone")
+        # syntax to call parent ka buy method
+        print(super().brand)
 
-s=SmartPhone(20000, "Samsung", 12, "Android", 2)
-
-print(s.os)
-print(s.brand)
+s=SmartPhone(20000, "Apple", 13)
+s.buy()
 
 
-
-# if you can use super then also call the contaructor 
+### super cannot use the any variable and and out side of the class
+### super method are only use the constructor or function
