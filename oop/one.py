@@ -1,27 +1,37 @@
-# Example
-### INHERITANCE 
-# parent
-class User:
+# constructor example
 
-  def __init__(self):
-    self.name = 'nitish'
-    self.gender = 'male'
+class Phone:
+    def __init__(self, price, brand, camera):
+        print ("Inside phone constructor")
+        self.price = price
+        self.brand = brand
+        self.camera = camera
 
-  def login(self):
-    print('login')
+    def buy(self):
+        print ("Buying a phone")
 
-# child
-class Student(User):
+class SmartPhone(Phone):
+    pass
 
-  def __init__(self):
-    self.rollno = 100
+s=SmartPhone(20000, "Apple", 13)
+s.buy()
 
-  def enroll(self):
-    print('enroll into the course')
 
-u = User()
-s = Student()
 
-print(s.name)
-s.login()
-s.enroll()
+# constructor example 2
+
+class Phone:
+    def __init__(self, price, brand, camera):
+        print ("Inside phone constructor")
+        self.__price = price
+        self.brand = brand
+        self.camera = camera
+
+class SmartPhone(Phone):
+    def __init__(self, os, ram):
+        self.os = os
+        self.ram = ram
+        print ("Inside SmartPhone constructor")
+
+s=SmartPhone("Android", 2)
+s.brand
