@@ -1,24 +1,4 @@
-# constructor example
-
-class Phone:
-    def __init__(self, price, brand, camera):
-        print ("Inside phone constructor")
-        self.price = price
-        self.brand = brand
-        self.camera = camera
-
-    def buy(self):
-        print ("Buying a phone")
-
-class SmartPhone(Phone):
-    pass
-
-s=SmartPhone(20000, "Apple", 13)
-s.buy()
-
-
-
-# constructor example 2
+# child can't access private members of the class
 
 class Phone:
     def __init__(self, price, brand, camera):
@@ -27,11 +7,13 @@ class Phone:
         self.brand = brand
         self.camera = camera
 
-class SmartPhone(Phone):
-    def __init__(self, os, ram):
-        self.os = os
-        self.ram = ram
-        print ("Inside SmartPhone constructor")
+    #getter
+    def show(self):
+        print (self.__price)
 
-s=SmartPhone("Android", 2)
-s.brand
+class SmartPhone(Phone):
+    def check(self):
+        print(self.__price)
+
+s=SmartPhone(20000, "Apple", 13)
+s.show()
