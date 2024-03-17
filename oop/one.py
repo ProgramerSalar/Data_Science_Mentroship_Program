@@ -8,9 +8,12 @@ class Parent:
 
 class Child(Parent):
 
-    def show(self):
-        print("This is in child class")
+    def __init__(self,val,num):
+        self.__val=val
+
+    def get_val(self):
+        return self.__val
         
-son=Child(100)
-print(son.get_num())
-son.show()
+son=Child(100,10)
+print("Parent: Num:",son.get_num())
+print("Child: Val:",son.get_val())
