@@ -1,13 +1,22 @@
-class A:
-    def __init__(self):
-        self.var1=100
+# Method Overriding
+class Phone:
+    def __init__(self, price, brand, camera):
+        print ("Inside phone constructor")
+        self.__price = price
+        self.brand = brand
+        self.camera = camera
 
-    def display1(self,var1):
-        print("class A :", self.var1)
-class B(A):
-  
-    def display2(self,var1):
-        print("class B :", self.var1)
+    def buy(self):
+        print ("Buying a phone")
 
-obj=B()
-obj.display1(200)
+class SmartPhone(Phone):
+    def buy(self):
+        print ("Buying a smartphone")
+
+s=SmartPhone(20000, "Apple", 13)
+
+s.buy()
+
+
+
+## if you use same function in parent and child class then overhide the parent class constructor 
