@@ -1,107 +1,43 @@
-class Atm:
+
+###### Aggregation(Has-A relationship)
 
 
-    # static variable - that variable in which found in class 
-  __counter = 1
+# example
+class Customer:
 
-  # constructor(special function)->superpower -> 
-  def __init__(self):
-    print(id(self))
-    self.pin = ''
-    self.__balance = 0
-    # instance variable - that variable in which call of support of class that is instance varaible 
-    ## cid is static variable and counter is instantce variable 
-    self.cid = Atm.__counter
-    Atm.__counter = Atm.__counter + 1
-    #self.menu()
+  def __init__(self,name,gender,address):
+    self.name = name
+    self.gender = gender
+    self.address = address
 
+  def print_address(self):
+    print(self.address._Address__city,self.address.pin,self.address.state)
 
-  def get_balance(self):
-    return self.__balance
+  def edit_profile(self,new_name,new_city,new_pin,new_state):
+    self.name = new_name
+    self.address.edit_address(new_city,new_pin,new_state)
 
+class Address:
 
-# utility functions   # static method function is called utility function 
-  @staticmethod
-  def get_counter():
-    return Atm.__counter
+  def __init__(self,city,pin,state):
+      self.__city = city
+      self.pin = pin
+      self.state = state
 
-  def set_balance(self,new_value):
-    if type(new_value) == int:
-      self.__balance = new_value
-    else:
-      print('beta bahot maarenge')
+  def get_city(self):
+    return self.__city
 
-  def __menu(self):
-    user_input = input("""
-    Hi how can I help you?
-    1. Press 1 to create pin
-    2. Press 2 to change pin
-    3. Press 3 to check balance
-    4. Press 4 to withdraw
-    5. Anything else to exit
-    """)
+  def edit_address(self,new_city,new_pin,new_state):
+    self.__city = new_city
+    self.pin = new_pin
+    self.state = new_state
 
-    if user_input == '1':
-      self.create_pin()
-    elif user_input == '2':
-      self.change_pin()
-    elif user_input == '3':
-      self.check_balance()
-    elif user_input == '4':
-      self.withdraw()
-    else:
-      exit()
+add1 = Address('gurgaon',122011,'haryana')
+cust = Customer('nitish','male',add1)
 
-  def create_pin(self):
-    user_pin = input('enter your pin')
-    self.pin = user_pin
+cust.print_address()
 
-    user_balance = int(input('enter balance'))
-    self.__balance = user_balance
-
-    print('pin created successfully')
-
-  def change_pin(self):
-    old_pin = input('enter old pin')
-
-    if old_pin == self.pin:
-      # let him change the pin
-      new_pin = input('enter new pin')
-      self.pin = new_pin
-      print('pin change successful')
-    else:
-      print('nai karne de sakta re baba')
-
-  def check_balance(self):
-    user_pin = input('enter your pin')
-    if user_pin == self.pin:
-      print('your balance is ',self.__balance)
-    else:
-      print('chal nikal yahan se')
-
-  def withdraw(self):
-    user_pin = input('enter the pin')
-    if user_pin == self.pin:
-      # allow to withdraw
-      amount = int(input('enter the amount'))
-      if amount <= self.__balance:
-        self.__balance = self.__balance - amount
-        print('withdrawl successful.balance is',self.__balance)
-      else:
-        print('abe garib')
-    else:
-      print('sale chor')
-      
-      
-      
-    
-print(Atm.get_counter())
-
-
-
-
-# Points to remember about static
-# Static attributes are created at class level.
-# Static attributes are accessed using ClassName.
-# Static attributes are object independent. We can access them without creating instance (object) of the class in which they are defined.
-# The value stored in static attribute is shared between all instances(objects) of the class in which the static attribute is defined.
+cust.edit_profile('ankit','mumbai',111111,'maharastra')
+cust.print_address()
+# method example
+# what about private attribute
