@@ -32,8 +32,11 @@ import numpy as np
 
 
 # shape method 
-c2 = np.arange(10).reshape(5, 2)  # 5 rows 2 column
-print(c2)
+# c2 = np.arange(10).reshape(5, 2)  # 5 rows 2 column
+# print(c2)
 
 
+# every item is one 
+c3 = np.ones((2, 3))  # 2 rows 3 column
+print(c3)
 
