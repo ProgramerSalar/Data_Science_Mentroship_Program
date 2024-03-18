@@ -24,10 +24,16 @@ import numpy as np
 
 
 
-c = np.arange(10)  # range method in numpy is arange 
-c1 = np.arange(1, 10, 2)
-print(c1)
-print(c)
+# c = np.arange(10)  # range method in numpy is arange 
+# c1 = np.arange(1, 10, 2)
+# print(c1)
+# print(c)
+
+
+
+# shape method 
+c2 = np.arange(10).reshape(5, 2)  # 5 rows 2 column
+print(c2)
 
 
 
