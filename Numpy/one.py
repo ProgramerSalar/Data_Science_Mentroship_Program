@@ -37,6 +37,23 @@ import numpy as np
 
 
 # every item is one 
-c3 = np.ones((2, 3))  # 2 rows 3 column
-print(c3)
+# c3 = np.ones((2, 3))  # 2 rows 3 column
+# print(c3)
+
+# c4 = np.zeros((2, 3))
+# print(c4)
+
+# c5 = np.random.random((2, 3))
+# print(c5)
+
+
+
+# linspace
+# (1, 10) means = range || 1 se 10 tak number
+# 10 means = 10 number print kar ke do 
+# means 1 se 10 tak 10 number print kar ke do 
+c6 = np.linspace(1, 10, 10)   # (lowerRange, upperRange, no_of_items_generate)
+print(c6) 
+
+
 
