@@ -1,26 +1,23 @@
 
 
-
-class Product:
-  def __init__(self, name, email):
-    self.name = name 
-    self.email = email
-    
-    
-class Phone:
+class A:
+  def m1(self):
+    return 20 
   
-  def hello(self):
-    print("hello world")
-
-class smartPhone(Product):
-  pass 
-
-
-class keypadPhone(Product, Phone):
-  pass 
-
-
-
-a = keypadPhone("hello", "@hello")
-print(a.email, a.name)
-
+  
+class B(A):
+  def m1(self):
+    val = super().m1() + 20   # upper class A m1 constructor call
+    return val 
+  
+  
+class C(B):
+  def m1(self):
+    val = super().m1()   # this code are work
+    val = self.m1()      # this code are not work
+    return val 
+  
+# a = B()
+# print(a.m1())
+b = C()
+print(b.m1())
