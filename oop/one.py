@@ -1,17 +1,25 @@
 
-
-class Parent:
+class Product:
+  
+  def review(self):
+    print("Product customer review")
+    
+    
+class Phone(Product):
   
   def __init__(self, name):
     self.name = name 
     
     
-class Child(Parent):
+  def buy(self):
+    print("buy a product")
+    
+    
+class SmartPhone(Phone):
   pass 
 
 
 
 
-
-a = Parent('ram')
+a = SmartPhone('manish')
 print(a.name)

@@ -24,3 +24,9 @@ Private properties of parent are not accessible directly in child class
 Child class can override the attributes or methods. This is called method overriding
 
 super() is an inbuilt function which is used to invoke the parent class methods and constructor
+
+
+
+
+## multi Inheritance diagram
+![alt text](<Screenshot 2024-03-18 120344.png>)
