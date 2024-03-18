@@ -9,6 +9,12 @@ inheritance digram, triangle, which class attach the triangle that is parent cla
 ![alt text](<Screenshot 2024-03-17 141742.png>)
 
 
+# Inheritance Typs
+* Single Inheritance
+* Multilevel Inheritance
+* Hierarchical Inheritance
+* Multiple Inheritance(Diamond Problem)
+* Hybrid Inheritance
 
 ## Inheritance in summary
 A class can inherit from another class.
@@ -36,5 +42,11 @@ super() is an inbuilt function which is used to invoke the parent class methods 
 ### Hiercal Inheritance diagram
 ![alt text](<Screenshot 2024-03-18 120838.png>)
 
+
+
+## Polymorphism
+* Method Overriding
+* Method Overloading
+* Operator Overloading
 
 
