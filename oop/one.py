@@ -1,17 +1,34 @@
 
-# Method Overriding
+##########  Abstraction
+
+from abc import ABC,abstractmethod
+class BankApp(ABC):
+
+  def database(self):
+    print('connected to database')
+
+  @abstractmethod
+  def security(self):
+    pass
+
+  @abstractmethod
+  def display(self):
+    pass
 
 
-class A:
-  
-  def area(self, a, b=0):
-    if b == 0:
-      return 3.14*a*a 
-    else:
-      return a*b 
+
+class MobileApp(BankApp):
+
+  def mobile_login(self):
+    print('login into mobile')
+
+  def security(self):
+    print('mobile security')
+
+  def display(self):
+    print('display')
     
     
-x = A()
-print(x.area(10))
-print(x.area(10,20))
-    
+mob = MobileApp()
+mob.security()
+obj = BankApp()
