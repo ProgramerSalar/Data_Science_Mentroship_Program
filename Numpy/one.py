@@ -13,3 +13,8 @@ a2 = np.array([[[1, 2],[3, 4]], [[5, 6], [7, 8]]])
 print(a2)
 
 
+# dType 
+b = np.array([1, 2, 3], dtype='float')
+print(b)
+
+
