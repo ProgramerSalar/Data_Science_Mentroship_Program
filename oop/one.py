@@ -1,25 +1,25 @@
 
+
+
 class Product:
-  
-  def review(self):
-    print("Product customer review")
+  def __init__(self, name, email):
+    self.name = name 
+    self.email = email
     
     
 class Phone(Product):
-  
-  def __init__(self, name):
-    self.name = name 
-    
-    
-  def buy(self):
-    print("buy a product")
-    
-    
-class SmartPhone(Phone):
+  pass 
+
+
+class smartPhone(Product):
+  pass 
+
+
+class keypadPhone(Product):
   pass 
 
 
 
-
-a = SmartPhone('manish')
+a = Product('hello', 'ram@')
 print(a.name)
+print(a.email)

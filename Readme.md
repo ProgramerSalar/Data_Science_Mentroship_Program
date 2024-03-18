@@ -30,3 +30,11 @@ super() is an inbuilt function which is used to invoke the parent class methods 
 
 ## multi Inheritance diagram
 ![alt text](<Screenshot 2024-03-18 120344.png>)
+
+
+
+### Hiercal Inheritance diagram
+![alt text](<Screenshot 2024-03-18 120838.png>)
+
+
+
