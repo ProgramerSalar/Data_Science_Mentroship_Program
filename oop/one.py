@@ -7,19 +7,20 @@ class Product:
     self.email = email
     
     
-class Phone(Product):
-  pass 
-
+class Phone:
+  
+  def hello(self):
+    print("hello world")
 
 class smartPhone(Product):
   pass 
 
 
-class keypadPhone(Product):
+class keypadPhone(Product, Phone):
   pass 
 
 
 
-a = Product('hello', 'ram@')
-print(a.name)
-print(a.email)
+a = keypadPhone("hello", "@hello")
+print(a.email, a.name)
+
