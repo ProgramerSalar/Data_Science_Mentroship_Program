@@ -10,25 +10,15 @@ a3 = np.arange(8).reshape(2, 2, 2)
 # print(a3)
 
 
-### Iterating 
+### Reshaping 
 
 
-# 1D array 
-for i in a1:
-    print(i)
+# Transponse 
+print(a2)   # [4, 3]
+print(a2.transpose())   # convert to [3, 4]
+print(a2.T)  # easy way to Transpose 
 
 
-# 2D array 
-for i in a2:  # ek bar me ek row print hota, jab 2d me loop chalate ho
-    print(i)
-    
-    
-    
-# 3D array 
-for i in a3:   # ek bar me ek 2D array print hota hai 
-    print(i)
-    
-    
-# how to print 1D array in 3d data 
-for i in np.nditer(a3): 
-    print(i)
+# ravel 
+print(a2.ravel())  # any dimension array convert to 1D array 
+
