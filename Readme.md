@@ -57,3 +57,8 @@ super() is an inbuilt function which is used to invoke the parent class methods 
 * NumPy arrays facilitate advanced mathematical and other types of operations on large numbers of data. Typically, such operations are executed more efficiently and with less code than is possible using Python’s built-in sequences.
 
 * A growing plethora of scientific and mathematical Python-based packages are using NumPy arrays; though these typically support Python-sequence input, they convert such input to NumPy arrays prior to processing, and they often output NumPy arrays.
+
+
+
+### Spliting Digram, 
+![alt text](<Screenshot 2024-03-19 193045.png>)
