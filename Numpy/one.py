@@ -4,15 +4,16 @@
 import numpy as np 
 
 
-a1 = np.arange(12)
-a2 = np.arange(12, 24)
+a1 = np.random.random((3, 3))
 # print(a1)
-# print(a2)
 
 
+# 0 -> col || 1 -> row 
+# print(np.max(a1, axis=0))   # colum wise maximum number 
 
-# max/min/sum/prod 
-print(np.max(a1))
-print(np.min(a1))
-print(np.sum(a1))    # all item sum 
-print(np.prod(a1))   # prod means mroduct, all item calculate 
+
+# mean/median/std/var   # std -> standard daviation # var -> variance 
+print(np.mean(a1))
+print(np.median(a1))
+print(np.std(a1))
+print(np.var(a1))
