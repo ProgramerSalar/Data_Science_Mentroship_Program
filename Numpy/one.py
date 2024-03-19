@@ -52,8 +52,18 @@ import numpy as np
 # (1, 10) means = range || 1 se 10 tak number
 # 10 means = 10 number print kar ke do 
 # means 1 se 10 tak 10 number print kar ke do 
-c6 = np.linspace(1, 10, 10)   # (lowerRange, upperRange, no_of_items_generate)
-print(c6) 
+# c6 = np.linspace(1, 10, 10)   # (lowerRange, upperRange, no_of_items_generate)
+# print(c6) 
 
 
+# identity 
+# if you create 3 index of matrix then use identity method 
+# 3 is index of matrix 
+# in this matrix digonal items are 1 and other items is 0 
+# like this:
+# [[1. 0. 0.]
+#  [0. 1. 0.]
+#  [0. 0. 1.]]
 
+c1 = np.identity(3)
+print(c1)
