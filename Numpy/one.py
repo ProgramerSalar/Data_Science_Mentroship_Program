@@ -13,4 +13,10 @@ a2 = np.arange(12, 24).reshape(4, 3)
 
 
 ## dot product 
-print(np.dot(a1, a2))
+# print(np.dot(a1, a2))
+
+
+
+## log and exponent 
+print(np.log(a1))
+print(np.exp(a1))
