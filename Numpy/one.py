@@ -13,7 +13,13 @@ a1 = np.random.random((3, 3))
 
 
 # mean/median/std/var   # std -> standard daviation # var -> variance 
-print(np.mean(a1))
-print(np.median(a1))
-print(np.std(a1))
-print(np.var(a1))
+# print(np.mean(a1))
+# print(np.median(a1))
+# print(np.std(a1))
+# print(np.var(a1))
+
+
+## trigomatric function 
+print(np.sign(a1))
+print(np.cos(a1))
+print(np.tan(a1))
