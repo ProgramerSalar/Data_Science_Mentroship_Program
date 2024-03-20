@@ -108,3 +108,58 @@ super() is an inbuilt function which is used to invoke the parent class methods 
 * With the help of Numpy.expand_dims() method, we can get the expanded dimensions of an array
 
 * https://numpy.org/doc/stable/reference/generated/numpy.expand_dims.html
+
+### np.where
+* The numpy.where() function returns the indices of elements in an input array where the given condition is satisfied.
+
+* https://numpy.org/doc/stable/reference/generated/numpy.where.html
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

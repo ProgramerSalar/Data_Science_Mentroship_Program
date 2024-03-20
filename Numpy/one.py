@@ -4,22 +4,25 @@
 import numpy as np 
 
 
-###### Expend dimension ########
-# np.expand_dims
-# With the help of Numpy.expand_dims() method, we can get the expanded dimensions of an array
+###### where  ########
+# np.where
+# The numpy.where() function returns the indices of elements in an input array where the given condition is satisfied.
 
-# https://numpy.org/doc/stable/reference/generated/numpy.expand_dims.html
+# https://numpy.org/doc/stable/reference/generated/numpy.where.html
 
 
-a = np.arange(24)
-# print(a)
+a = np.random.randint(1,100,15)
 
-b = np.expand_dims(a, axis=0)
+# print(np.where(a > 50))
+
+
+# replace all item is greater than 50 and 0 
+
+# b = np.where(condition, true, false)  # if condition is true then do that else do that 
+b = np.where(a > 50, 0, a)
 print(b)
-print(b.shape)
 
-c = np.expand_dims(a, axis=1)
-print(c.shape)
+
 
 
 
