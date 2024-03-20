@@ -4,41 +4,26 @@
 import numpy as np 
 
 
-### NUMPY ARRAY VS PYTHON LISTS 
 
-# speed for List 
-# speed
-# list
-# a = [i for i in range(10000000)]
-# b = [i for i in range(10000000,20000000)]
-
-# c = []
-# import time 
-
-# start = time.time()
-# for i in range(len(a)):
-#   c.append(a[i] + b[i])
-# print(time.time()-start)
-    
-    
-    
-# speed for list 
-# numpy
-# import numpy as np
-# a = np.arange(10000000)
-# b = np.arange(10000000,20000000)
-
-# start = time.time()
-# c = a + b
-# print(time.time()-start)
+## Advance Indexing 
+a = np.arange(24).reshape(6, 4)
+print(a)
 
 
-import sys 
+### Fancy Indexing 
 
-e = [i for i in range(10000000)]
-print(sys.getsizeof(e))
+# [[ 0  1  2  3]
+#  [ 4  5  6  7]
+#  [ 8  9 10 11]
+#  [12 13 14 15]
+#  [16 17 18 19]
+#  [20 21 22 23]]
+# i want to 1 row 2, 4, 5
+print(a[[1, 2, 4, 5]])
+
+# i want to 0, 1 and 3 column 
+print(a[:,[0, 1, 3]])  # : -> all row and column
 
 
-e2 = np.arange(10000000)
-print(sys.getsizeof(e2))
+### Boolean Indexing 
 
