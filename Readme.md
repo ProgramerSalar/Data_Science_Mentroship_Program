@@ -80,3 +80,24 @@ super() is an inbuilt function which is used to invoke the parent class methods 
 - If there is a dimension whose size is not 1 in either of the two arrays, it cannot be broadcasted, and an error is raised.
 
 <img src = "https://jakevdp.github.io/PythonDataScienceHandbook/figures/02.05-broadcasting.png">
+
+
+### np.sort
+* Return a sorted copy of an array.
+
+* https://numpy.org/doc/stable/reference/generated/numpy.sort.html
+
+### np.append
+* The numpy.append() appends values along the mentioned axis at the end of the array
+
+* https://numpy.org/doc/stable/reference/generated/numpy.append.html
+
+### np.concatenate
+* numpy.concatenate() function concatenate a sequence of arrays along an existing axis.
+
+* https://numpy.org/doc/stable/reference/generated/numpy.concatenate.html
+
+### np.unique
+* With the help of np.unique() method, we can get the unique values from an array given as     parameter in np.unique() method.
+
+* https://numpy.org/doc/stable/reference/generated/numpy.unique.html/

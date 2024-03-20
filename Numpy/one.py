@@ -4,21 +4,15 @@
 import numpy as np 
 
 
-###### concatenate ########
-# np.concatenate
-# numpy.concatenate() function concatenate a sequence of arrays along an existing axis.
+###### unique ########
+# np.unique
+# With the help of np.unique() method, we can get the unique values from an array given as parameter in np.unique() method.
 
-# https://numpy.org/doc/stable/reference/generated/numpy.concatenate.html
-
-
-a = np.arange(6).reshape(2, 3)
-b = np.arange(6, 12).reshape(2, 3)
-
-c = np.concatenate((a, b), axis=0)
-print(c)
-d = np.concatenate((a, b), axis=1)    
-print(d)
+# https://numpy.org/doc/stable/reference/generated/numpy.unique.html/
 
 
 
+a = np.array([1, 1, 1, 2, 2, 2, 3, 3, 4])
+# print(a)
 
+print(np.unique(a))
