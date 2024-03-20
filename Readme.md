@@ -151,16 +151,29 @@ super() is an inbuilt function which is used to invoke the parent class methods 
 
 
 
+### np.isin
+* With the help of numpy.isin() method, we can see that one array having values are checked in a different numpy array having different elements with different sizes.
+
+* https://numpy.org/doc/stable/reference/generated/numpy.isin.html
 
 
 
+### np.flip
+* The numpy.flip() function reverses the order of array elements along the specified axis, preserving the shape of the array.
+
+* https://numpy.org/doc/stable/reference/generated/numpy.flip.html
 
 
+### np.put
+* The numpy.put() function replaces specific elements of an array with given values of p_array. Array indexed works on flattened array.
+
+* https://numpy.org/doc/stable/reference/generated/numpy.put.html
 
 
+### np.delete
+* The numpy.delete() function returns a new array with the deletion of sub-arrays along with the mentioned axis.
 
-
-
+*  https://numpy.org/doc/stable/reference/generated/numpy.delete.html
 
 
 

@@ -2,21 +2,26 @@ import numpy as np
 
 
 ## Array Function 
-# np.corrcoef
-# Return Pearson product-moment correlation coefficients.
-
-# https://numpy.org/doc/stable/reference/generated/numpy.corrcoef.html
 
 
 
 
-salary = np.array([20000,40000,25000,35000,60000])
-experience = np.array([1,3,2,4,2])
 
-print(np.corrcoef(salary,experience))
+a = np.random.randint(1,100,15)
+b = np.arange(24).reshape(6, 4)
+print(a)
 
-# output :- 
-# [[1.         0.25344572]
-#  [0.25344572 1.        ]]
+# isin 
+print(np.isin(a, [10, 20, 30]))
+# # flip 
+print(np.flip(a))
+print(np.flip(b, axis=1))
 
-# 0.25 ka relation hai 
+# put 
+np.put(a, [0, 1], [110, 130])  # [0, 1] -> 0 index and 1 index replace to [110, 130]
+print(a)
+
+
+# delete 
+c = np.delete(a, [0, 2, 3])  # [0, 2, 3] -> delete the 0, 2 and 3 index 
+print(c)
