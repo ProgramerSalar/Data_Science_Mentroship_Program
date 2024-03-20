@@ -1,4 +1,6 @@
 # Data Science Mantorship Program:
+### In Numpy axis = 0 means row 
+### In Numpy axis = 1 means column 
 
 digram of Aggregation( digram shape is show, which class are aggrigate)
 ![alt text](<Screenshot 2024-03-17 141313.png>)
@@ -60,6 +62,8 @@ super() is an inbuilt function which is used to invoke the parent class methods 
 
 
 
+
+
 ### Spliting Digram, 
 ![alt text](<Screenshot 2024-03-19 193045.png>)
 
@@ -116,10 +120,10 @@ super() is an inbuilt function which is used to invoke the parent class methods 
 
 
 
+### np.argmax
+* The numpy.argmax() function returns indices of the max element of the array in a particular axis.
 
-
-
-
+* https://numpy.org/doc/stable/reference/generated/numpy.argmax.html
 
 
 
