@@ -186,7 +186,10 @@ super() is an inbuilt function which is used to invoke the parent class methods 
 * np.in1d
 
 
+### np.clip
+* numpy.clip() function is used to Clip (limit) the values in an array.
 
+* https://numpy.org/doc/stable/reference/generated/numpy.clip.html
 
 
 
