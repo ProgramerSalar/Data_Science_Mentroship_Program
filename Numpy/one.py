@@ -4,14 +4,41 @@
 import numpy as np 
 
 
-a1 = np.arange(12).reshape(4, 3)
-a2 = np.arange(12, 24).reshape(3, 4)
-a3 = np.arange(8).reshape(2, 2, 2)
-print(a2)
+### NUMPY ARRAY VS PYTHON LISTS 
 
-### spliting 
-## this is oposite of stacking 
-print(np.hsplit(a2, 2))   # how many parts -> 2 parts
+# speed for List 
+# speed
+# list
+# a = [i for i in range(10000000)]
+# b = [i for i in range(10000000,20000000)]
 
-# vertical spliting 
-print(np.vsplit(a1, 2))
+# c = []
+# import time 
+
+# start = time.time()
+# for i in range(len(a)):
+#   c.append(a[i] + b[i])
+# print(time.time()-start)
+    
+    
+    
+# speed for list 
+# numpy
+# import numpy as np
+# a = np.arange(10000000)
+# b = np.arange(10000000,20000000)
+
+# start = time.time()
+# c = a + b
+# print(time.time()-start)
+
+
+import sys 
+
+e = [i for i in range(10000000)]
+print(sys.getsizeof(e))
+
+
+e2 = np.arange(10000000)
+print(sys.getsizeof(e2))
+
