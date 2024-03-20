@@ -131,7 +131,10 @@ super() is an inbuilt function which is used to invoke the parent class methods 
 * https://numpy.org/doc/stable/reference/generated/numpy.cumsum.html
 
 
+### np.percentile
+* numpy.percentile()function used to compute the nth percentile of the given data (array elements) along the specified axis.
 
+* https://numpy.org/doc/stable/reference/generated/numpy.percentile.html
 
 
 
