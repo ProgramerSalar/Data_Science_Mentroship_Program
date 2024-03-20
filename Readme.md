@@ -144,7 +144,10 @@ super() is an inbuilt function which is used to invoke the parent class methods 
 
 
 
+### np.corrcoef
+* Return Pearson product-moment correlation coefficients.
 
+* https://numpy.org/doc/stable/reference/generated/numpy.corrcoef.html
 
 
 

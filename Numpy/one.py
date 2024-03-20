@@ -2,18 +2,21 @@ import numpy as np
 
 
 ## Array Function 
-# np.histogram
-# Numpy has a built-in numpy.histogram() function which represents the frequency of data distribution in the graphical form.
+# np.corrcoef
+# Return Pearson product-moment correlation coefficients.
 
-# https://numpy.org/doc/stable/reference/generated/numpy.histogram.html
-
-
+# https://numpy.org/doc/stable/reference/generated/numpy.corrcoef.html
 
 
-a = np.random.randint(1,100,15)
-# print(a)
 
-b = np.histogram(a, bins=[0, 50, 100])   # b/w 0 to 50 and 50 to 100 
-print(b)
-# output :-
-# [ 5, 10]   # b/w 0 to 50 5 item and 50 to 100 10 item found 
+
+salary = np.array([20000,40000,25000,35000,60000])
+experience = np.array([1,3,2,4,2])
+
+print(np.corrcoef(salary,experience))
+
+# output :- 
+# [[1.         0.25344572]
+#  [0.25344572 1.        ]]
+
+# 0.25 ka relation hai 
