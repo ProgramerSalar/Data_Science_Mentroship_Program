@@ -3,25 +3,31 @@
 ## Array Function 
 import numpy as np 
 
-#### Working with mathematical formulas ##### 
-## Sigmoid 
-def Sigmoid(array):
-    return 1/(1 + np.exp((-array)))
+
+####### sort #############
+# arrange the index in order wise ascending order/ descending order 
 
 
-a = np.arange(100)
-print(Sigmoid(a))
+# np.sort
+# Return a sorted copy of an array.
+
+# https://numpy.org/doc/stable/reference/generated/numpy.sort.html
 
 
-## mse 
-actual = np.random.randint(1, 50, 25)
-predicted = np.random.randint(1, 50, 25)
 
-# print(actual)
-# print(predicted)
-
-def mse(actual, prdicted):
-    return np.mean((actual - prdicted)**2)
+a = np.random.randint(1, 100, 15)
+# print(a)
+b = np.random.randint(1, 100, 24).reshape(6, 4)
+print(b)
 
 
-print(mse(actual, predicted))
+# ascending order
+print(np.sort(a))
+# descending order 
+print(np.sort(a)[::-1])
+
+# 2D sorting in colum wise 
+print(np.sort(b, axis=0))   # axis 0 mins ->  column wise 
+print(np.sort(b, axis=1))   # row wise sorting 
+
+
