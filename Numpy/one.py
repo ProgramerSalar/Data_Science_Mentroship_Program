@@ -1,19 +1,17 @@
-
-
-## Array Function 
 import numpy as np 
 
 
-###### argmax  ########
-# np.argmax
-# The numpy.argmax() function returns indices of the max element of the array in a particular axis.
+## Array Function 
+# np.cumsum
+# numpy.cumsum() function is used when we want to compute the cumulative sum of array elements over a given axis.
 
-# https://numpy.org/doc/stable/reference/generated/numpy.argmax.html
+# https://numpy.org/doc/stable/reference/generated/numpy.cumsum.html
+
+
+
 
 a = np.random.randint(1,100,15)
-print(a)
-print(np.argmax(a))    # output is 6 -> 6 number index per item hai jo sabse bada hai 
-print(np.argmin(a))
 
 
-
+print(np.cumsum(a))   # sum of each index 
+print(np.cumprod(a))   # multply of each index

@@ -125,7 +125,10 @@ super() is an inbuilt function which is used to invoke the parent class methods 
 
 * https://numpy.org/doc/stable/reference/generated/numpy.argmax.html
 
+### np.cumsum
+* numpy.cumsum() function is used when we want to compute the cumulative sum of array elements over a given axis.
 
+* https://numpy.org/doc/stable/reference/generated/numpy.cumsum.html
 
 
 
