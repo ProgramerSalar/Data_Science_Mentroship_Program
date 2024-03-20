@@ -137,7 +137,10 @@ super() is an inbuilt function which is used to invoke the parent class methods 
 * https://numpy.org/doc/stable/reference/generated/numpy.percentile.html
 
 
+###  np.histogram
+* Numpy has a built-in numpy.histogram() function which represents the frequency of data distribution in the graphical form.
 
+* https://numpy.org/doc/stable/reference/generated/numpy.histogram.html
 
 
 
