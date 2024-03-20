@@ -178,6 +178,12 @@ super() is an inbuilt function which is used to invoke the parent class methods 
 
 
 
+### Set functions
+* np.union1d
+* np.intersect1d
+* np.setdiff1d
+* np.setxor1d
+* np.in1d
 
 
 
