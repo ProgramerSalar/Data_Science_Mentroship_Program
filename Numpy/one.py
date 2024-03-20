@@ -4,30 +4,19 @@
 import numpy as np 
 
 
-####### sort #############
-# arrange the index in order wise ascending order/ descending order 
-
-
-# np.sort
-# Return a sorted copy of an array.
-
-# https://numpy.org/doc/stable/reference/generated/numpy.sort.html
+###### append ########
+# np.append
+# The numpy.append() appends values along the mentioned axis at the end of the array
+# https://numpy.org/doc/stable/reference/generated/numpy.append.html
 
 
 
-a = np.random.randint(1, 100, 15)
+
+a = np.arange(20)
+a2 = np.arange(24).reshape(6, 4)
 # print(a)
-b = np.random.randint(1, 100, 24).reshape(6, 4)
+print(a2)
+
+# print(np.append(a, 200))
+b = np.append(a2,np.random.random((a2.shape[0],1)),axis=1)   # axis=1 -> column wise 
 print(b)
-
-
-# ascending order
-print(np.sort(a))
-# descending order 
-print(np.sort(a)[::-1])
-
-# 2D sorting in colum wise 
-print(np.sort(b, axis=0))   # axis 0 mins ->  column wise 
-print(np.sort(b, axis=1))   # row wise sorting 
-
-
