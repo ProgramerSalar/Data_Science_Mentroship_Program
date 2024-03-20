@@ -4,39 +4,91 @@
 import numpy as np 
 
 
+## Brodcasting 
+# The term broadcasting describes how NumPy treats arrays with different shapes during arithmetic operations.
+# The smaller array is “broadcast” across the larger array so that they have compatible shapes.
 
-## Advance Indexing 
-a = np.arange(240)
+
+# same shape 
+# a = np.arange(6).reshape(3, 2)
+# # print(a)
+# b = np.arange(6, 12).reshape(3, 2)
+# # print(b)
+# print(a + b)
+
+
+# different shape 
+# diff shape
+# a = np.arange(6).reshape(2,3)
+# b = np.arange(3).reshape(1,3)
+
 # print(a)
+# print(b)
+
+# print(a+b)
+
+# Example 
+# More examples
+
+# a = np.arange(12).reshape(4,3)
+# b = np.arange(3)
+
+# print(a)
+# print(b)
+
+# print(a+b)
 
 
-### Fancy Indexing 
+# a = np.arange(12).reshape(3,4)
+# b = np.arange(3)
 
-# [[ 0  1  2  3]
-#  [ 4  5  6  7]
-#  [ 8  9 10 11]
-#  [12 13 14 15]
-#  [16 17 18 19]
-#  [20 21 22 23]]
+# print(a)
+# print(b)
 
+# print(a+b)
 
 
-### Boolean Indexing 
+a = np.arange(3).reshape(1,3)
+b = np.arange(3).reshape(3,1)
 
-# find all number is greter than 50 
-print(a[a > 50])
-
-
-# find the even number
-print(a[a % 2 == 0])
-
-
-# find the even number and greter than 50 
-b = a[(a > 50) & (a % 2 == 0)]
+print(a)
 print(b)
 
+print(a+b)
 
-# find the all number not divisible by 6
-b1 = a[~(a % 2 == 0)]   # ~ -> not divisible by 2 
-print(b1)
 
+a = np.arange(3).reshape(1,3)
+b = np.arange(4).reshape(4,1)
+
+print(a)
+print(b)
+
+print(a + b)
+
+
+a = np.array([1])
+# shape -> (1,1)
+b = np.arange(4).reshape(2,2)
+# shape -> (2,2)
+
+print(a)
+print(b)
+
+print(a+b)
+
+
+a = np.arange(12).reshape(3,4)
+b = np.arange(12).reshape(4,3)
+
+print(a)
+print(b)
+
+print(a+b)
+
+a = np.arange(16).reshape(4,4)
+b = np.arange(4).reshape(2,2)
+
+print(a)
+print(b)
+
+print(a+b)
