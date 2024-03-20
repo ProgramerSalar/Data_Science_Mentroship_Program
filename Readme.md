@@ -101,3 +101,10 @@ super() is an inbuilt function which is used to invoke the parent class methods 
 * With the help of np.unique() method, we can get the unique values from an array given as     parameter in np.unique() method.
 
 * https://numpy.org/doc/stable/reference/generated/numpy.unique.html/
+
+
+
+### np.expand_dims
+* With the help of Numpy.expand_dims() method, we can get the expanded dimensions of an array
+
+* https://numpy.org/doc/stable/reference/generated/numpy.expand_dims.html
